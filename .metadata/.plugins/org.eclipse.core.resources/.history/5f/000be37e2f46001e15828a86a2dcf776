@@ -1,0 +1,11 @@
+package com.kh.variable;
+
+public class VariableConversion {
+	//1. 자동 형변환(암시적 형변환, 묵시적 형변환)
+	public static void main(String[] args) {
+		int intNum = 100;
+		System.out.println(intNum);
+		long longNum = intNum;
+		System.out.println(longNum);
+	}
+}
