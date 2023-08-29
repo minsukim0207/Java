@@ -1,0 +1,5 @@
+package com.kh.practice1.func;
+//이름, 성별, 나이, 키를 입력받고 출력
+public class VariablePractice1 {
+
+}
