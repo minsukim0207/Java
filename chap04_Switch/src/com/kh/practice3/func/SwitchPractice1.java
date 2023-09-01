@@ -1,6 +1,6 @@
 package com.kh.practice3.func;
 import java.util.Scanner;
-
+ 
 public class SwitchPractice1 {
 
 	public static void main(String[] args) {
