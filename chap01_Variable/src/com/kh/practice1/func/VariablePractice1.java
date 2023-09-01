@@ -1,6 +1,6 @@
 package com.kh.practice1.func;
 import java.util.Scanner;
-
+ 
 public class VariablePractice1 {
 	//이름, 성별, 나이, 키를 입력받고 출력
 	public static void main(String[] args) {
