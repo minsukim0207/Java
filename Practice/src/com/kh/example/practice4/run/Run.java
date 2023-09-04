@@ -10,5 +10,4 @@ public class Run {
 		stu1.information();
 		
 	}
-
 }
