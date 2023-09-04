@@ -16,13 +16,6 @@ public class Car {
 		this.engineOn = true;
 	}
 	
-	public Car (String brand, String model, int maxSpeed) {
-		this.brand = brand;
-		this.model = model;
-		this.maxSpeed = maxSpeed;
-		this.engineOn = true;
-	}
-	
 	// 엔진 시작 메서드
 	public void startEngine() {
 		if (engineOn) {
