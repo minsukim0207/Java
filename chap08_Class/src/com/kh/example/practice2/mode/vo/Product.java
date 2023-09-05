@@ -13,9 +13,9 @@ public class Product {
 	}
 
 	public void information() {
-		System.out.println("제품 이름: " + this.pName);
-		System.out.println("제품 가격: " + this.price);
-		System.out.println("제품 브랜드: " + this.brand);
+		System.out.println("제품 이름: " + pName);
+		System.out.println("제품 가격: " + price);
+		System.out.println("제품 브랜드: " + brand);
 	}
 
 }
