@@ -5,9 +5,9 @@ public class ProductRun {
 
 	public static void main(String[] args) {
 		
-		Product pro = new Product();
+		Product prd = new Product();
 		
-		pro.information();
+		prd.information();
 	}
 
 }
