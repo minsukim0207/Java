@@ -1,4 +1,4 @@
-package com.kh.getter.setter;
+package com.kh.gettersetter.badexam;
 
 public class PlayerCharacter {
 	
@@ -48,14 +48,14 @@ public class PlayerCharacter {
 	
 	// 캐릭터 정보 출력
 	public void displayInfo() {
-		System.out.println("캐릭터 정보: " + name);
-		System.out.println("체력 정보: " + health);
-		System.out.println("공격 파워: " + attackPower);
+		System.out.println("캐릭터 정보: " + this.name);
+		System.out.println("체력 정보: " + this.health);
+		System.out.println("공격 파워: " + this.attackPower);
 	}
 	
 	// 캐릭터 공격을 출력하는 메서드
 	public void attack(PlayerCharacter target) {
-		System.out.println(name + "이(가) " + target.getName() + "을(를) " + attackPower + "데미지로 공격했습니다.");
+		System.out.println(this.name + "이(가) " + target.getName() + "을(를) " + this.attackPower + "데미지로 공격했습니다.");
 		System.out.println("공격했습니다.");
 	}
 	
