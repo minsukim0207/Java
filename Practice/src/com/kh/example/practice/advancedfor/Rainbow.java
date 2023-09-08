@@ -34,16 +34,12 @@ public class Rainbow {
 		
 		System.out.println(rainbow.size());
 		
-		rainbow.remove(1);
-		rainbow.remove(2);
-		rainbow.remove(3);
-		rainbow.remove(5);
-		rainbow.remove(7);
-		rainbow.remove(8);
-		
 		for (String color : rainbow) {
 			System.out.print(color + " ");
 		}
+		System.out.println();
+		
+		System.out.println(rainbow.get(0) + " " + rainbow.get(4) + " " + rainbow.get(6));
 		
 	}
 
