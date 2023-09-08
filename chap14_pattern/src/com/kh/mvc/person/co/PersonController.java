@@ -13,7 +13,9 @@ public class PersonController {
 	}
 	
 	public void run() {
-		model.setName(view.inputName());
+		String inputName = view.inputName();
+		model.setName(inputName);
+		model.inValidName(inputName);
 		view.displayInfo(model.getName());
 	}
 }
