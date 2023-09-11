@@ -8,10 +8,11 @@ public class PersonModel {
 		this.name = name;
 	}
 	
-	public void inValidName(String name) {
+	public void isValidName(String name) {
 		// isEmpty, isBlack, equals, name.length < 0, null
-		if () {
+		if (name == null || "".equals(name)) {
 			System.out.println("입력값이 없습니다.");
+			System.exit(0);
 		} else this.name = name;
 	}
 	

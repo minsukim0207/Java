@@ -7,7 +7,7 @@ public class PersonView {
 	
 	public String inputName() {
 		System.out.print("이름을 입력하세요: ");
-		return sc.next();
+		return sc.nextLine();
 	}
 	
 	public void displayInfo(String name) {
