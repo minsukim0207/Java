@@ -8,7 +8,6 @@ public class TodoListMain {
 		TodoListView tdView = new TodoListView();
 		
 		tdView.displayTodoList();
-		System.out.println(tdModel.getItem());
 	}
 
 }
