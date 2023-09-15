@@ -15,7 +15,7 @@ public class CookBook extends Book {
 	
 	@Override
 	public String toString() {
-		String str = "도서명: " + super.getTitle() + "저자명: " + super.getAuthor() + "출판사명: " + super.getPublisher() + "쿠폰 유무: " + this.coupon;
+		String str = "도서명: " + super.getTitle() + " 저자명: " + super.getAuthor() + " 출판사명: " + super.getPublisher() + " 쿠폰 유무: " + this.coupon;
 		return str;
 	}
 	

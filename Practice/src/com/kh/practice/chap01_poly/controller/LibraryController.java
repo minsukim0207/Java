@@ -4,7 +4,8 @@ import com.kh.practice.chap01_poly.model.vo.*;
 public class LibraryController {
 	
 	private Member mem;
-	private Book[] bList = new Book[5];
+	public Book[] bList = new Book[5];
+	
 	{
 	bList[0] = new CookBook("백종원의 집밥", "백종원", "tvN", true);
 	bList[1] = new AniBook("한번 더 해요", "미티", "원모어", 19);
@@ -41,11 +42,11 @@ public class LibraryController {
 		int result = 0;
 		
 		if (bList[index] == bList[1] || bList[index] == bList[2]) {
-			if (mem.getAge() < bList[i].getAccessAge()) {
+			if (mem.getAge() < bList[index].getAccessAge()) {
 				result = 1;
 			} else result = 2;
 		} else {
-			if (bList[index].getCoupon) {
+			if (bList[index].getCoupon()) {
 				mem.setCouponCount(mem.getCouponCount() + 1);
 				result = 2;
 			} else result = 2;
