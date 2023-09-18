@@ -1,0 +1,16 @@
+Iterator
+컬렉션 요소를 순회하고 각 요소에 접근하는데 사용되는 인터페이스
+List, Set, Map 등과 같은 컬렉션을 순차적으로 처리할 때 유용
+
+iterator()
+
+
+boolean hasNext()
+다음 요소가 있는지 검사
+
+E next()
+다음 요소로 이동하고 해당 요소를 반환
+다음 요소가 없을 시 NoSuchElementException 발생
+
+default void remove()
+
