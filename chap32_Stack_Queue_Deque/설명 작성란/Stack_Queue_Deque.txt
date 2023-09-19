@@ -1,0 +1,35 @@
+스택, 큐, 덱
+데이터를 다양한 방식으로 저장하고 접근할 수 있도록 설계되어 있음
+다양한 알고리즘과 문제 해결
+
+Stack
+후입선출 Last In First Out
+push() : 스택에 데이터 추가
+pop() : 스택의 가장 최근 데이터 제거하고 반환
+peek() : 스택의 가장 최근 데이터를 반환
+
+Queue
+선입선출 First In Fist Out의 원칙에 따라 저장하고 관리하는 자료 구조
+데어타가 큐에 추가되면 가장 먼저 추가된 데이터가 가장 먼저 제거되는 방식
+offer() : 요소 추가
+poll() : 큐에서 요소 반환하고 제거
+peek() : 큐의 Front 요소 반환
+size() : 큐 크기 확인
+
+DeQueue Double Ended Queue
+양쪽 끝에서 요소를 추가하거나 제거할 수 있는 자료구조
+인터페이스이기 때문에 LinkedList, ArrayDequeue 사용
+큐와 스택의 기능을 모두 수행 가능
+addFirst(), offerFirst() : 맨 앞에 요소 추가
+addLast(), offerLast() : 맨 뒤에 요소 추가
+removeFirst(), pollFirst() : 맨 앞 요소 반환하고 제거
+removeLast(), pollLast() : 맨 뒤 요소 반환하고 제거
+getFirst(), peekFirst() : 맨 앞 요소 반환
+getLast(), peekLast() : 맨 뒤 요소 반환
+
+addFirst() : 추가할 공간이 부족하거나 제약 조건에 어긋나는 경우 예외 발생
+offerFirst() : 예외 발생하지 않음. 요소 추가 성공하면 True, 실패하면 False 반환
+removeLast() : 삭제할 요소가 없을 경우 예외 발생
+pollLast() : 삭제할 요소가 없을 경우 null 반환
+getFirst() : 요소가 비었을 경우 예외 발생
+peekFirst() : 요소가 비었을 경우 null 발생
