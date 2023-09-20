@@ -1,11 +1,11 @@
 package com.kh.graphprac;
 import java.util.LinkedList;
 
-public class GraphPrac {
+public class DFSGraph {
 	private int V;
 	private LinkedList<Integer>[] adjList;
 	
-	public GraphPrac(int ver) {
+	public DFSGraph(int ver) {
 		V = ver;
 		adjList = new LinkedList[ver];
 		
@@ -17,12 +17,7 @@ public class GraphPrac {
 	public void addEdge(int source, int des) {
 		adjList[source].add(des);
 	}
-	/*
-	          0
-	      1          2
-	   3    4     5     6
-	  7 8  9 10 11 12
-	*/
+	
 	public void DFS(int startNode) {
 		boolean[] visited = new boolean[V];
 		DFSUtil(startNode, visited);
