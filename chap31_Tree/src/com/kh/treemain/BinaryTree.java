@@ -44,6 +44,7 @@ public class BinaryTree {
 			inOrderTraversalRec(root.left);
 			System.out.println(root.data + " ");
 			inOrderTraversalRec(root.right);
+			//System.out.println("Right: " + root.data + " ");
 		}
 	}
 
@@ -56,6 +57,11 @@ public class BinaryTree {
 		tree.insert(40);
 		tree.insert(60);
 		tree.insert(80);
+		tree.insert(110);
+		tree.insert(130);
+		tree.insert(230);
+		tree.insert(240);
+		tree.insert(170);
 		System.out.println("이진 트리 중위 순회 결과: ");
 		tree.inOrderTraversal();
 	}
