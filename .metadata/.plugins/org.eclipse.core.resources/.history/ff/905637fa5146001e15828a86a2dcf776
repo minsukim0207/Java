@@ -1,7 +1,0 @@
-package com.kh.practice2.func;
-
-public class CastingPractice2 {
-	//실수형으로 국어, 영어, 수학 점수 입력 받아 총점과 평균을 출력
-	//총점과 평균은 정수형으로 출력
-
-}

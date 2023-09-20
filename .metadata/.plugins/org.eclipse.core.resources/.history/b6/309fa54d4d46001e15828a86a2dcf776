@@ -1,6 +1,0 @@
-package com.kh.practice1.func;
-
-public class VariablePractice2 {
-	//두 정수를 입력 받아 합, 차 곱, 나누기한 몫 출력
-
-}

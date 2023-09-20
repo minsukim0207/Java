@@ -1,6 +1,0 @@
-package com.kh.practice1.func;
-
-public class VariablePractice4 {
-	//영어 문자열을 입력받아 앞 세 문자만 출력
-
-}
