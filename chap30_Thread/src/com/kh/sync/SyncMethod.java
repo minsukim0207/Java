@@ -19,6 +19,11 @@ public class SyncMethod {
 		count++;
 	}
 
+	/*
+	 * pTask : 동기화된 블록과 함께 사용
+	 * synchronized(lockObj) : 코드 블록 내에서 count 변수를 증가시키기 전에 lockObj를 사용하여 동기화를 수행
+	 * lockObj 사용 이유 : 다른 메서드에서 동기화에 사용할 수 있고, 다른 객체에 대한 동기화와 분리되어 충돌을 방지할 수 있음
+	 */
 	public void pTask() {
 		// 다른 비동기 코드
 		synchronized (lockObj) {
@@ -27,6 +32,8 @@ public class SyncMethod {
 		}
 		// 다른 비동기 코드
 	}
+
+	// SyncMethod 클래스의 인스턴스를 생성
 	public static void main(String[] args) {
 		SyncMethod sync = new SyncMethod();
 		
@@ -67,3 +74,7 @@ public class SyncMethod {
 	}
 
 }
+
+// synchironized count 변수에 대한 동시 접근을 동기화
+// 스레드 간 경쟁 조건이 발생하지 않고 count 변수가 안전하게 증가
+// 데이터의 일관성 보존
